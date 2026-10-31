@@ -120,6 +120,7 @@ var game = {
         new Achievement("Temperature", "Go θ", "θ", () => game.layers[7] && game.layers[7].timesReset > 0),
         new Achievement("Stack A-New!", "ReStack", "<img alt=\"LC\" class=\"inline\" src=\"images/layercoin.svg\"/>", () => game.restackLayer.timesReset > 0),
         new Achievement("H λ l f L i f e", "Go λ", "λ", () => game.layers[10] && game.layers[10].timesReset > 0),
+        new Achievement("...", "Reach 1ee1,000,000,000 α", "αgain", () => game.layers[0] && game.layers[0].resource.gte("1eee9")),
         new Achievement("One for Everyone", "Have 7,800,000,000 Layer Coins", "<img alt=\"LC\" class=\"inline\" src=\"images/layercoin.svg\"/>", () => game.restackLayer.layerCoins.gte(7.8e9)),
         new Achievement("What's the Point of Layers?", "Buy the Meta Upgrade", "<img alt=\"LC\" class=\"inline\" src=\"images/layercoin.svg\"/>", () => game.restackLayer.metaUpgrade.level.gt(0)),
         new Achievement("Wake Up", "Go Meta", "<img alt=\"LC\" class=\"inline\" src=\"images/layercoin.svg\"/>", () => game.metaLayer.active),
