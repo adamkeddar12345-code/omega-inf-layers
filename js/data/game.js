@@ -92,6 +92,7 @@ var game = {
         new Achievement("Octacore", "Have 1 <span>α<sub>8</sub></span> Generator", "<span>α<sub>8</sub></span>", () => game.layers[0] && game.layers[0].generators[7].bought.gt(0)),
         new Achievement("Upgradalicious", "Buy your first α Upgrade", "<span>α<sub>UP</sub></span>", () => game.layers[0] && game.layers[0].upgrades[0].level.gt(0)),
         new Achievement("Stonks", "Reach 1e18 α", "α", () => game.layers[0] && game.layers[0].resource.gte(1e18)),
+        new Achievement("More Stonks", "Reach 1e24 α", "α", () => game.layers[0] && game.layers[0].resource.gte(1e24)),
         new Achievement("Other Times Await", "Go β", "β", () => game.layers[1] && game.layers[1].timesReset > 0),
         new Achievement("POW", "Have 1 <span>β<sub>P<sub>1</sub></sub></span> Generator", "<span>β<sub>P<sub>1</sub></sub></span>", () => game.layers[1] && game.layers[1].powerGenerators[0].bought.gt(0)),
         new Achievement("Polynomial POW", "Have 1 <span>β<sub>P<sub>2</sub></sub></span> Generator", "<span>β<sub>P<sub>2</sub></sub></span>", () => game.layers[1] && game.layers[1].powerGenerators[1].bought.gt(0)),
