@@ -115,6 +115,7 @@ var game = {
         new Achievement("Aleph-1", "Reach 1e30 ℵ", '<span class="aleph">ℵ</span>', () => game.alephLayer.aleph.gte(1e30)),
         new Achievement("Aleph-2", "Reach 1.8e308 ℵ", '<span class="aleph">ℵ<sub>[1]</sub></span>', () => game.alephLayer.aleph.gte(1.8e308)),
         new Achievement("Aleph-3", "Reach 1e1024 ℵ", '<span class="aleph">ℵ<sub>λ</sub></span>', () => game.alephLayer.aleph.gte(1e1024)),
+        new Achievement("Aleph- OK CAN THIS STOP", "Reach 1e10000 ℵ", '<span class="aleph">ℵ<sub>STOPPP</sub></span>', () => game.alephLayer.aleph.gte(1e10000)),
         new Achievement("It all runs by itself", "Enable the Aleph Automator", "<img src=\"images/hardware-chip.svg\" alt=\"A\">", () => game.automators.autoAleph.upgrade.level.gte(1)),
         new Achievement("How many are there?!", "Go ε", "ε", () => game.layers[4] && game.layers[4].timesReset > 0),
         new Achievement("It's time to stop! (not)", "Go ζ", "ζ", () => game.layers[5] && game.layers[5].timesReset > 0),
@@ -133,7 +134,7 @@ var game = {
         new Achievement("What are Layer resets?", "Buy the ReStack Tree Upgrade in Row 5", "<img alt=\"LC\" class=\"inline\" src=\"images/layercoin.svg\"/>", () => game.restackLayer.upgradeTreeNames.substractLayers.apply()),
         new Achievement("Faster than Light", "Advance ~300e9 Layers per second", "»»»", () => game.metaLayer.getLayersPS().gte(299792458)),
         new Achievement("It never Ends", "Reach Layer 1e10", "<span style='font-size: 30%;'><span>Ω<sub>ϝ</sub></span><sup>ρ</sup>↑<span>Ω<sub>ϙ</sub></span><sup>Ν</sup>↑<span>Ω<sub>ϛ</sub></span><sup>κ</sup>↑<span>Ω</span><sup>Σ</sup></span>", () => game.metaLayer.layer.gte(1e10)),
-        new Achievement("Inf-Infinity", "Reach Layer ~1.8e308", "<span class='flipped-v'>Ω</span>", () => game.metaLayer.layer.gte(INFINITY))
+        new Achievement("Inf-Infinity", "Reach Layer ~1.8e308", "<span class='flipped-v'>Ω</span>", () => game.metaLayer.layer.gte(1e308))
     ],
     currentLayer: null,
     currentChallenge: null,
